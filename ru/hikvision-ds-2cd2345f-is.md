@@ -27,13 +27,9 @@ Hikvision DS-2CD2345F-IS
 setenv soc hi3516av100
 setenv sensor ov4689
 setenv totalmem 128M
-
 setenv osmem 32M
-
 setenv bootargs 'mem=32M console=ttyAMA0,115200 panic=20 root=/dev/mtdblock3 rootfstype=squashfs init=/init mtdparts=hinand:1024k(boot),1024k(env),2048k(kernel),5120k(rootfs),-(rootfs_data)'
-
 setenv bootcmd 'setenv setargs setenv bootargs ${bootargs}; run setargs; nand read 0x82000000 0x200000 0x200000; bootm 0x82000000'
-
 setenv ethaddr 00:12:34:56:78:90    //задать MAC-адрес камеры, если не задан
 setenv ipaddr 192.168.1.10          //задать IP-адрес камеры, если не задан
 setenv serverip 192.168.1.2         //задать адрес компа с TFTP-сервером
