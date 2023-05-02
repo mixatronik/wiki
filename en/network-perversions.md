@@ -26,7 +26,7 @@ For U-boot network
     setenv phyaddrd 1
     saveenv
 ```
-### HiWatch, HI3518CV100
+### HiWatch DS-I120/DS-I122, HI3518CV100
 
 ```
 For U-boot network
